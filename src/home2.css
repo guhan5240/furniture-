@@ -213,23 +213,21 @@ span{
 }
 
 .wehelp{
+    position: relative;
     width:1900px;
     height:973px;
-    background-color: aqua;
+   
      display: flex;
      justify-content: space-between;
 }
-.wehelp div{
-   
 
-}
 .help{
     margin-top:185px;
     margin-right: 160px;
     padding: 10px;
     width:714px;
     height:523px;
-    background-color: #EAEAEA;
+    
 }
 .help h1{
      color: black;
@@ -284,7 +282,7 @@ span{
     
    height:973px;
    width: 60%;
-   background-color: aquamarine;
+   
    margin-left:158px ;
 }
 .greendots{
@@ -296,15 +294,27 @@ span{
 }
 .whychoose{
     position: absolute;
-    width: 520px;
+    width: 500px;
     height: 595px;
-    top:185px;
-    left:220px;
-    
+    top:165px;
+    left:210px;
+    border-radius: 25px;;
+     z-index: 2;
+
 }
 .sofaleafs{
      position: absolute;
     width: 396px;
     height: 482px;;
-    z-index: 4;
+    z-index: 3;
+    top:451px;
+    left:600px;
 }
+.chairlight{
+    position: absolute;
+    left: 750px;
+    top:165px;
+    width:226px;
+    height:226px;
+}
+
