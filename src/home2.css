@@ -1,0 +1,310 @@
+.home{
+  
+    
+    
+}
+
+.home-container{
+    height:70vh;
+    background: #3c6150;
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+}
+
+.homeTitle{
+   font-family: "Bruno Ace", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+}
+.body-Content{
+    width:35%;
+    margin-left: 130px;
+
+}
+.body-Content p{
+    color:#ffffff;
+}
+.body-img{
+    margin-right: 240px;
+}
+button{
+    background-color: rgb(243, 196, 43);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+
+.dots{
+    position:relative;
+   left:700px;
+   bottom:300px;
+   background:none;
+   z-index:1;
+}
+.homesofa{
+position:relative;
+    z-index: 2;
+    background: none;
+}
+.second{
+    padding: 50px;;
+    display:flex;
+    justify-content: space-around;
+}
+.text-box{
+    width: 20vw;
+    height:300px;
+    margin-top: 20px;;
+    padding:10px
+}
+.text-box h1{
+     font-family: "Bruno Ace", sans-serif;
+     font-size: 30px;
+     font-weight: 100;
+     font-style: normal;
+     color: black;
+     margin-bottom: 10px;
+}
+.text-box h1,p{
+    font-family: "Bruno Ace", sans-serif;
+    color:black;
+}
+.btn{
+background-color: black;
+color: #ffffff;
+border-radius: 20px;
+}
+.box{
+    width: 300px;
+    height:357px;
+    background-color:#EAEAEA;
+    border-radius: 25px;
+  
+    align-content: center;
+    text-align: center;
+    
+}
+.box img{
+    width: 280px;
+    height:280px;
+}
+span{
+    font-family: "Bruno Ace", sans-serif;
+    color: black;
+}
+
+/*.whyChoose{
+   width:100%;
+   display: flex;
+  
+   background-color: bisque;
+  
+}
+.why{
+    
+    margin-top:200px;
+    
+    
+    margin-left:140px;
+    width:839px;
+    height:491px;
+    background-color: aquamarine;
+}
+.yellow{
+    width:395px;
+    height:275px;
+    z-index:1;
+    position: relative;
+    left: 300px;
+}
+.sofa-light img{
+    position: relative;
+    
+    z-index: 2;
+}
+.sofa-light{
+    margin-left:0px;
+}
+.whybox{
+    width:398px;  
+    height:145px;
+    background-color: #EAEAEA;
+    color: black;
+}
+*/
+.whyChoose {
+  width: 100%;
+  height:931px;
+  display: flex;
+
+}
+.why2{
+    width:735px;
+    height: 130px;
+}
+.why h1,p{
+    color: black;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.why{
+    margin-top: 276px;
+    margin-right: 70px;
+    margin-left:158px;
+    width:839px;
+    height:491px; 
+}
+.sofa-light{
+    
+     width:750px;
+     display: flex;
+     position: relative;
+     
+    
+}
+.whychooseimg{
+    position: absolute;
+    z-index: 2;
+   margin-top: 151px;
+    width:646px;
+    height:740px;
+    margin-left: 90px;
+    border-radius: 25px;
+}
+.yellow{
+    width:395px;
+    height:275px;
+     z-index:1;
+    position:absolute;
+}
+.boxes{
+    
+   display: flex;
+    
+    width:100%;
+    
+}
+.whybox{
+    padding: 10px;
+    
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 0%;
+    margin-right:30px;
+    width:398px;  
+    height:145px;
+    background-color: #EAEAEA;
+    color: black;
+}
+.whybox p {
+    color:#00000080;
+    font-size:14px;
+    margin: 10px;
+}
+.whybox span{
+    font-size: 14px;
+    display: block;
+     margin: 10px;
+}
+
+.wehelp{
+    width:1900px;
+    height:973px;
+    background-color: aqua;
+     display: flex;
+     justify-content: space-between;
+}
+.wehelp div{
+   
+
+}
+.help{
+    margin-top:185px;
+    margin-right: 160px;
+    padding: 10px;
+    width:714px;
+    height:523px;
+    background-color: #EAEAEA;
+}
+.help h1{
+     color: black;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 38px;;
+    font-weight: lighter;
+    margin-bottom: 20px;
+     width:512px;
+    height:112px;
+}
+.help p{
+    width: 683px;
+    height:110px;
+    font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;          /* allow items to wrap to next line */
+  gap: 20px;                /* spacing between boxes */
+  justify-content: center;  /* center horizontally */
+   width:714px;       /* optional: limit width */
+           /* center container */
+}
+
+.hbox {
+  flex: 1 1 calc(50% - 20px); /* each box takes 50% width minus gap */
+  height: 86px;
+  align-items: center;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+     width:344px;
+  
+}
+.hbox img{
+    width :14px;
+    height: 24px;
+    
+}
+.hbox p{
+    margin: 5px;
+    margin-left: 0;
+    width:300px;
+}
+.help button{
+    font-size: 16px;
+    padding:10px;
+}
+.fhelp{
+    
+   height:973px;
+   width: 60%;
+   background-color: aquamarine;
+   margin-left:158px ;
+}
+.greendots{
+    position: absolute;
+    left: 160px;
+    width:395px;
+    height: 275px;
+    z-index: 1;
+}
+.whychoose{
+    position: absolute;
+    width: 520px;
+    height: 595px;
+    top:185px;
+    left:220px;
+    
+}
+.sofaleafs{
+     position: absolute;
+    width: 396px;
+    height: 482px;;
+    z-index: 4;
+}
