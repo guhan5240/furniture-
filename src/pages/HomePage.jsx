@@ -9,10 +9,11 @@ import bag from "../assets/bag.png"
 import arrows from "../assets/arrows.png"
 import truck from "../assets/truck.png"
 import support from "../assets/support.png"
+import { Footer } from "./Footer"
 export const HomePage = () => {
   return (
     <>
-    <div className="home">
+    
         <div className="home-container">
     <div className="body-Content">
         <h1 className="homeTitle">
@@ -107,8 +108,38 @@ export const HomePage = () => {
             <button className="btn">Explore now</button>
             </div>
         </div>
+        <div className="most-popular">
+                <h1 className="pro-text">Most popular product</h1>
+                <div className="products"></div>
+                <h1 className="says">what our customer says</h1>
+                <div className="customersays">
+                    <div className="customer-imgs">
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                        <img src="/customer.png"></img>
+                    </div>
+                    <div className="one-customer">
+                        <div className="text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque</p></div>
+                        <div className="img"><img src="/customer.png"></img></div>
+                        <div className="sentence"><p>Jerome prasana kumar</p></div>
+                    </div>
+                </div>
+        </div>
+        <Footer/>
     
-    </div>
+    
     </>
   )
 }

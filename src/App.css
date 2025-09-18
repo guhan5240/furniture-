@@ -1,8 +1,8 @@
 
 .container{
   display: flex;
-  width: 100%;
- background: #3c6150;
+  width: 100vw;
+ background: #3B5D50;
   justify-content: space-between;
   padding-top: 20px;
   
@@ -20,14 +20,14 @@ li{
   font-style: normal;
   margin-left: 30px;
   font-family: "Bruno Ace", sans-serif;
-  font-size:20px;
+  font-size:16px;
   font-weight: 100;
 
 }
-.logo{
+.logo h1{
   font-family: "Bruno Ace", sans-serif;
-  font-weight: 200;
-  font-size: 30px;
-  font-style: normal;
+  font-weight:400;
+  font-size: 72px;
+  font-style:normal;
   margin-left: 160px;
 }

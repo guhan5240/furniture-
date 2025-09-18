@@ -1,8 +1,3 @@
-.home{
-  
-    
-    
-}
 
 .home-container{
     height:70vh;
@@ -97,47 +92,9 @@ span{
     color: black;
 }
 
-/*.whyChoose{
-   width:100%;
-   display: flex;
-  
-   background-color: bisque;
-  
-}
-.why{
-    
-    margin-top:200px;
-    
-    
-    margin-left:140px;
-    width:839px;
-    height:491px;
-    background-color: aquamarine;
-}
-.yellow{
-    width:395px;
-    height:275px;
-    z-index:1;
-    position: relative;
-    left: 300px;
-}
-.sofa-light img{
-    position: relative;
-    
-    z-index: 2;
-}
-.sofa-light{
-    margin-left:0px;
-}
-.whybox{
-    width:398px;  
-    height:145px;
-    background-color: #EAEAEA;
-    color: black;
-}
-*/
+
 .whyChoose {
-  width: 100%;
+  width: 100vw;
   height:931px;
   display: flex;
 
@@ -163,7 +120,9 @@ span{
     
      width:750px;
      display: flex;
-     position: relative;
+     position: absolute;
+     right: 160px;
+     
      
     
 }
@@ -214,8 +173,9 @@ span{
 
 .wehelp{
     position: relative;
-    width:1900px;
+    width:1800px;
     height:973px;
+    
    
      display: flex;
      justify-content: space-between;
@@ -223,7 +183,7 @@ span{
 
 .help{
     margin-top:185px;
-    margin-right: 160px;
+    
     padding: 10px;
     width:714px;
     height:523px;
@@ -246,15 +206,15 @@ span{
 }
 .flex-container {
   display: flex;
-  flex-wrap: wrap;          /* allow items to wrap to next line */
-  gap: 20px;                /* spacing between boxes */
-  justify-content: center;  /* center horizontally */
-   width:714px;       /* optional: limit width */
-           /* center container */
+  flex-wrap: wrap;         
+  gap: 20px;                
+  justify-content: center;  
+   width:714px;      
+           
 }
 
 .hbox {
-  flex: 1 1 calc(50% - 20px); /* each box takes 50% width minus gap */
+  flex: 1 1 calc(50% - 20px); 
   height: 86px;
   align-items: center;
   
@@ -317,4 +277,112 @@ span{
     width:226px;
     height:226px;
 }
+.most-popular{
+    width: 100vw;
+    height:1105px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  
+}
+.most-popular .products,.customersays{
+    width: 1600px;
+    height:375px;
+    margin-top: 100px;
+    background-color:#EAEAEA ;
+    border-radius: 20px;
+}
+.customersays {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.one-customer{
+    width: 657px;
+    height: 275px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+.one-customer .text{
+    width:637px;
+    height:96px;
+    
+}
+.one-customer .img{
+     width:100px;
+    height:100px;
+    border-radius: 50px;
+   
+}
+.one-customer .sentence{
+     width:230px;
+    height:19px;
+     
+}
+
+.says{
+   color: black;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 38px;;
+    font-weight: lighter;
+    position: relative;
+    top:100px;
+}
+.pro-text{
+    color: black;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 38px;;
+    font-weight: lighter;
+    position: absolute;
+    top:0;
+    left: 160px;;
+}
+
+.customer-imgs {
+    
+     width: 400px;
+    height: 275px;
+    display: grid;
+    
+  grid-template-columns: repeat(5, 55px); /* 5 per row */
+  gap: 20px;
+  justify-content: center;
+}
+
+.customer-imgs img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.customer-imgs img:nth-child(odd) {
+  margin-top: 20px;
+}
+.customer-imgs img:nth-child(even) {
+  margin-right: 30px;
+}
+.customer-imgs img:nth-child(3) {
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,127 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bruno+Ace&family=Cactus+Classical+Serif&display=swap');
+
+
+.headproduct{
+    width: 100vw;
+    height:184px;
+    background-color: #3B5D50;
+    margin-bottom: 30px;
+}
+
+.pro{
+    position:absolute;
+    left: 160px;
+    top: 178px;
+    color: #FFFFFF;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 28px;;
+    font-weight: lighter; 
+    
+}
+
+.productbody{
+    margin-left: 160px;;
+    width:1600px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #3B5D50;
+  margin: 10px 0;
+}
+
+.pro-list ul{
+    display: flex;
+    
+    
+}
+.pro-list ul li{
+   
+    color:black;
+    padding:10px 10px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 30px;
+    font-family: "Cactus Classical Serif", serif;
+  font-weight: 400;
+  
+  font-size: 28px;
+}
+.pro-list ul li:hover{
+    background-color: #3B5D50;
+    border-radius: 10px;
+    color: white;
+}
+.chairs{
+    margin-left: 159px;
+    width:1602px;
+    height:902px;
+   
+}
+.chairs h2{
+    color: #000000;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 28px;;
+    font-weight: 400;
+}
+.chairs-list{
+    width:100%;
+    height:734px;
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainchair{
+    width: 642px;
+    height:734px;
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.mainchairimg{
+     width: 622px;
+    height:622px;
+    display: flex;
+    justify-content: center;
+   
+   padding: 15px;
+    
+}
+.models{
+    width: 940px;
+    height: 734px;
+    padding:0 15px;
+    
+}
+.mainchair .text{
+    width:523px;
+    height:90px;
+    color: #000000;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 58px;;
+    font-weight: 400;
+
+}
+.models{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+   
+}
+.models div{
+    width: 300px;
+    height: 357px;
+    background-color: #EAEAEA;
+    
+    border-radius: 20px;
+}
+
