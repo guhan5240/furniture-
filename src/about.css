@@ -1,0 +1,85 @@
+.abouthead{
+    width:1920px;
+    height: 340px;;
+    background-color:#3B5D50;
+   
+}
+.aboutimg img{
+    position: absolute;
+    width:627px;
+    height:450px;
+    left: 1075px;;
+    z-index: 2;
+}
+.aboutimg .dots{
+    z-index: 1;
+    top:172px;
+    position: absolute;
+    left: 1575px;
+    width: 185px;
+    height: 125px;
+}
+.abouttext{
+    position: absolute;
+    top:282px;
+    left: 157px;
+    font-family: "Bruno Ace", sans-serif;
+  font-size:38px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.aboutwehelp{
+    position: absolute;
+    top:557px
+}
+.aboutwhychoose{
+    position: absolute;
+    top:1530px;
+}
+.aboutfooter{
+    position: absolute;
+   top:3022px;
+}
+.aboutcustomersay .customersays{
+    position: absolute;
+    top:2501px;
+    left:160px;
+    z-index: 1;
+}
+.aboutcustomersay h1{
+    position: absolute;
+    z-index: 4;
+    top:2501px;
+    left:662px
+}
+.contactfooter{
+    position: absolute;
+    top:1109px;
+}
+.contactinfo{
+    position: absolute;
+    top:552px;
+    left:337px;
+    width:499px;
+    height: 452px;;
+    border: 1px solid #3B5D50;
+    border-radius: 25px;
+}
+.register{
+     position: absolute;
+    top:589px;
+    left:883px;
+    width: 700px;
+    height: 378px;;
+    border: 1px solid #3B5D50;
+    border-radius: 5px;
+}
+.registerform label{
+    color: #3B5D50;
+    font-family: "Bruno Ace", sans-serif;
+  font-size:12px;
+  margin-left: 20px;
+}
+.registerform{
+    padding-top:20px;
+}

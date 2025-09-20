@@ -4,6 +4,7 @@
   width: 100vw;
  background: #3B5D50;
   justify-content: space-between;
+  padding:0px;
   padding-top: 20px;
   
 }
@@ -25,6 +26,8 @@ li{
 
 }
 .logo h1{
+  position: relative;
+  top: -20px;
   font-family: "Bruno Ace", sans-serif;
   font-weight:400;
   font-size: 72px;

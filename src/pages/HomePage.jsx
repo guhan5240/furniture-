@@ -10,7 +10,67 @@ import arrows from "../assets/arrows.png"
 import truck from "../assets/truck.png"
 import support from "../assets/support.png"
 import { Footer } from "./Footer"
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { useState, useEffect } from "react";
+
+const images = [
+   {
+            img:"/chair1.png"
+        },
+        {
+            img:"/chair2.png"
+        },
+        {
+            img:"/chair3.png"
+        },
+        {
+            img:"/chair1.png"
+        },
+         {
+            img:"/chair3.png"
+        },
+         {
+            img:"/chair5.png"
+        },
+         {
+            img:"/chair2.png"
+        },
+        {
+            img:"/chair5.png"
+        }
+];
 export const HomePage = () => {
+
+ const [startIdx, setStartIdx] = useState(0);
+  const total = images.length;
+
+  const handlePrev = () => {
+    setStartIdx((prev) => (prev === 0 ? total - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setStartIdx((prev) => (prev + 1) % total);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStartIdx((prev) => (prev + 1) % total);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [total]);
+
+  const getDisplayImages = () => [
+    images[startIdx % total],
+    images[(startIdx + 1) % total],
+    images[(startIdx + 2) % total],
+     images[(startIdx + 3) % total],
+    images[(startIdx + 4) % total]
+    
+  ];
   return (
     <>
     
@@ -110,7 +170,47 @@ export const HomePage = () => {
         </div>
         <div className="most-popular">
                 <h1 className="pro-text">Most popular product</h1>
-                <div className="products"></div>
+                <div className="products">
+                    <div className="display">
+      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+        <button onClick={handlePrev}>
+          &#8592;
+        </button>
+        <div style={{ display: "flex", gap: "15px" }}>
+          {getDisplayImages().map((img, idx) => (
+           <div className="imgslide"> <img
+              key={idx}
+              src={img.img}
+              alt={`Slide ${startIdx + idx + 1}`}
+              style={{ width: "300px", height: "357px", objectFit: "cover" }}
+            />
+            <p>comfort</p>
+            </div>
+          ))}
+          
+        </div>
+        <button onClick={handleNext} className="next">
+          &#8594;
+        </button>
+      </div>
+          <div style={{ display: "flex", justifyContent: "center", marginTop: "20px", gap: "10px" }}>
+          {images.map((_, idx) => (
+            <span
+              key={idx}
+              style={{
+                width: "14px",
+                height: "14px",
+                borderRadius: "50%",
+                background: idx === startIdx ? "#333" : "#ccc",
+                display: "inline-block",
+                cursor: "pointer"
+              }}
+              onClick={() => setStartIdx(idx)}
+            />
+          ))}
+        </div>
+      </div>
+                </div>
                 <h1 className="says">what our customer says</h1>
                 <div className="customersays">
                     <div className="customer-imgs">
